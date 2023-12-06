@@ -1,5 +1,5 @@
 function [ CM,reconstructed_test ] = reconstructed_signals_testing(D1,X,test_set,r,ct)
-% Reconstructs the binary dataset by giving a 0 or a 1 to each value of the signal.
+% Converts the real values of the reconstructed signal to 0 and 1
 
 reconstructed_test = zeros(r,ct);
 
