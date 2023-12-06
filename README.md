@@ -27,7 +27,7 @@ The code was tested on Matlab-R2019a
 
 **ADL/unwanted_columns_removal:** Function that removes zero columns and the columns having only one 1. 
 
-
+-----
 
 **RADL/Relaxed_Adversarial_Dictionary_Learning:** The proposed method RADL that creates the dictionary.
 
