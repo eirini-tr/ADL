@@ -23,7 +23,7 @@ The code was tested on Matlab-R2019a
 
 **plot_dictionary_distribution:** Function that plots the distribution of the trained dictionary. 
 
-**reconstructed_signals_testing:** Function that reconstructs the binary dataset by giving a 0 or a 1 to each value of the signal. 
+**reconstructed_signals_testing:** Function that Converts the real values of the reconstructed signal to 0 and 1.
 
 **unwanted_columns_removal:** Function that removes zero columns and the columns having only one 1. 
 
