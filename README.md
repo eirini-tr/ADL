@@ -43,6 +43,8 @@ The code was tested on Matlab-R2019a
 
 **RADL/unwanted_columns_removal:** Function that removes zero columns and the columns having only one 1. 
 
+**RADL/data_scaling:** Function that sums the values of the columns according to the size of the scale in an overlapping mode.
+
 # Citation
 
 Troullinou, E., Tsagkatakis, G., Palagina, G., Papadopouli, M., Smirnakis, S.M. and Tsakalides, P., 2020. Adversarial dictionary learning for a robust analysis and modelling of spontaneous neuronal activity. Neurocomputing, 388, pp.188-201.
