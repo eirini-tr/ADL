@@ -1,6 +1,6 @@
 # Adversarial dictionary learning for a robust analysis and modelling of spontaneous neuronal activity
 
-This repository contains the official implementation of the proposed method ADL described in the "Adversarial dictionary learning for a robust analysis and modelling of spontaneous neuronal activity".
+This repository contains the official implementation of the proposed methods ADL and RADL described in the "Adversarial dictionary learning for a robust analysis and modelling of spontaneous neuronal activity".
 
 [Paper Link](https://www.sciencedirect.com/science/article/pii/S0925231220300862?casa_token=_wAwet7U6oYAAAAA:TbeD-NqHBe5aCoSfIUzir7Ia3q-f57Gze3q3E5R1_ziHbf_K7CpmFshMhWKecCEBR9C3v5czDA)
 
