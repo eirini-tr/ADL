@@ -13,7 +13,7 @@ The code was tested on Matlab-R2019a
 
 # Contents
 
-**Adversarial_Dictionary_Learning:** The proposed method that creates the dictionary.
+**Adversarial_Dictionary_Learning:** The proposed method ADL that creates the dictionary.
 
 **clean_noisy_examples_classification:** Function that trains and tests the classifier on clean and noisy data.
 
