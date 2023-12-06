@@ -13,19 +13,35 @@ The code was tested on Matlab-R2019a
 
 # Contents
 
-**Adversarial_Dictionary_Learning:** The proposed method ADL that creates the dictionary.
+**ADL/Adversarial_Dictionary_Learning:** The proposed method ADL that creates the dictionary.
 
-**clean_noisy_examples_classification:** Function that trains and tests the classifier on clean and noisy data.
+**ADL/clean_noisy_examples_classification:** Function that trains and tests the classifier on clean and noisy data.
 
-**column_merging:** Function that merges the columns of a matrix.
+**ADL/column_merging:** Function that merges the columns of a matrix.
 
-**OMP_non_normalized_atoms:** Function that decomposes sparse signals using the OMP algorithm.
+**ADL/OMP_non_normalized_atoms:** Function that decomposes sparse signals using the OMP algorithm.
 
-**plot_dictionary_distribution:** Function that plots the distribution of the trained dictionary. 
+**ADL/plot_dictionary_distribution:** Function that plots the distribution of the trained dictionary. 
 
-**reconstructed_signals_testing:** Function that Converts the real values of the reconstructed signal to 0 and 1.
+**ADL/reconstructed_signals_testing:** Function that converts the real values of the reconstructed signal to 0 and 1.
 
-**unwanted_columns_removal:** Function that removes zero columns and the columns having only one 1. 
+**ADL/unwanted_columns_removal:** Function that removes zero columns and the columns having only one 1. 
+
+
+
+**RADL/Relaxed_Adversarial_Dictionary_Learning:** The proposed method RADL that creates the dictionary.
+
+**RADL/clean_noisy_examples_classification:** Function that trains and tests the classifier on clean and noisy data.
+
+**RADL/OMP_non_normalized_atoms:** Function that decomposes sparse signals using the OMP algorithm.
+
+**RADL/plot_dictionary_distribution:** Function that plots the distribution of the trained dictionary. 
+
+**RADL/reconstructed_signals_training_RADL:** Function that converts the real values of the reconstructed signal to 0 and 1.
+
+**RADL/reconstructed_signals_testing_RADL:** Function that converts the real values of the reconstructed signal to 0 and 1.
+
+**RADL/unwanted_columns_removal:** Function that removes zero columns and the columns having only one 1. 
 
 # Citation
 
