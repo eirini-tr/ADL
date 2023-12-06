@@ -1,0 +1,82 @@
+function [reconstructed_test] = reconstructed_signals_testing_RADL(D1,X,r,ct,scale)
+% Converts the real values of the reconstructed signal to 0 and 1
+
+
+reconstructed_test = zeros(r,ct);
+
+prod = D1*X;
+
+
+for i=1:r
+    for j=1:ct
+        if scale==2
+            if prod(i,j)< 1/(2*scale)
+                reconstructed_test(i,j) = 0;
+            elseif prod(i,j)>= 1/(2*scale) & prod(i,j)<= (1+(1/scale))/2
+                reconstructed_test(i,j) = 1/scale;
+            else
+                reconstructed_test(i,j) = 1;
+            end
+        elseif scale==3
+            if prod(i,j)< 1/(2*scale)
+                reconstructed_test(i,j) = 0;
+            elseif prod(i,j)>= 1/(2*scale) & prod(i,j)< ((1/scale)+ (2/scale))/2
+                reconstructed_test(i,j) = 1/scale;
+            elseif prod(i,j)>= ((1/scale)+ (2/scale))/2 & prod(i,j)<= (1+(2/scale))/2
+                reconstructed_test(i,j) = 2/scale;
+            else
+                reconstructed_test(i,j) = 1;
+            end
+        elseif scale==4
+            if prod(i,j)< 1/(2*scale)
+                reconstructed_test(i,j) = 0;
+            elseif prod(i,j)>= 1/(2*scale) & prod(i,j)< ((1/scale)+ (2/scale))/2
+                reconstructed_test(i,j) = 1/scale;
+            elseif prod(i,j)>= ((1/scale)+ (2/scale))/2 & prod(i,j)<((2/scale)+ (3/scale))/2
+                reconstructed_test(i,j) = 2/scale;
+            elseif prod(i,j)>=((2/scale)+ (3/scale))/2 & prod(i,j)<(1+(3/scale))/2
+                reconstructed_test(i,j) = 3/scale;
+            else
+                reconstructed_test(i,j) = 1;
+            end
+        elseif scale==5
+            if prod(i,j)< 1/(2*scale)
+                reconstructed_test(i,j) = 0;
+            elseif prod(i,j)>= 1/(2*scale) & prod(i,j)< ((1/scale)+ (2/scale))/2
+                reconstructed_test(i,j) = 1/scale;
+            elseif prod(i,j)>= ((1/scale)+ (2/scale))/2 & prod(i,j)<((2/scale)+ (3/scale))/2
+                reconstructed_test(i,j) = 2/scale;
+            elseif prod(i,j)>=((2/scale)+ (3/scale))/2 & prod(i,j)<((3/scale)+ (4/scale))/2
+                reconstructed_test(i,j) = 3/scale;
+            elseif prod(i,j)>=((3/scale)+ (4/scale))/2 & prod(i,j)<(1+(4/scale))/2
+                reconstructed_test(i,j) = 4/scale;
+            else
+                reconstructed_test(i,j) = 1;
+            end
+        elseif scale==6
+            if prod(i,j)< 1/(2*scale)
+                reconstructed_test(i,j) = 0;
+            elseif prod(i,j)>= 1/(2*scale) & prod(i,j)< ((1/scale)+ (2/scale))/2
+                reconstructed_test(i,j) = 1/scale;
+            elseif prod(i,j)>= ((1/scale)+ (2/scale))/2 & prod(i,j)<((2/scale)+ (3/scale))/2
+                reconstructed_test(i,j) = 2/scale;
+            elseif prod(i,j)>=((2/scale)+ (3/scale))/2 & prod(i,j)<((3/scale)+ (4/scale))/2
+                reconstructed_test(i,j) = 3/scale;
+            elseif prod(i,j)>=((3/scale)+ (4/scale))/2 & prod(i,j)<((4/scale)+(5/scale))/2
+                reconstructed_test(i,j) = 4/scale;
+            elseif prod(i,j)>=((4/scale)+(5/scale))/2 & prod(i,j)<((5/scale)+1)/2
+                reconstructed_test(i,j) = 5/scale;
+            else
+                reconstructed_test(i,j) = 1;
+            end
+            
+        end
+        
+    end
+end
+
+
+
+
+end
+
