@@ -1,0 +1,27 @@
+function plot_dictionary_distribution(D1)
+% Plots the distribution of the trained dictionary
+
+[~,cd] = size(D1);
+assoi_numbers = zeros(1,cd);
+
+for m=1:cd
+    assoi_numbers(m) = nnz(D1(:,m));
+end
+
+
+histogram(assoi_numbers);
+xlabel('Synchronicity Patterns')
+ylabel('Number of Synchronicity Patterns');
+xlim([0 20]);                    
+%set(gca, 'YTick',0:2000:7000);         % set y axis with step
+set(gca, 'Yscale','log');               % logscale for y axis
+
+% Shape of the figure
+x0 = 10;
+y0 = 10;
+width = 350;
+height = 300;   
+set(gcf,'units','points','position',[x0,y0,width,height])
+set(gca,'fontsize',14)
+
+end
