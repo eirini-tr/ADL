@@ -1,0 +1,15 @@
+function scaled_data = data_scaling(data,scale,r,c)
+% Sum the values of the columns according to the size of the scale in an overlapping mode
+
+scaled_data = zeros(r,c-scale);
+
+for i=1:r
+    for j=1:c-scale
+        scaled_data(i,j) = sum(data(i,j:scale+j-1));
+    end
+end
+
+scaled_data = scaled_data./scale;
+
+
+end
